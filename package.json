@@ -1,0 +1,23 @@
+{
+  "name": "test-pw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:playwright:lambda": "cross-env LT=true playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa-ihorskliar/test-pw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aa-ihorskliar/test-pw/issues"
+  },
+  "homepage": "https://github.com/aa-ihorskliar/test-pw#readme",
+  "devDependencies": {
+    "@playwright/test": "1.30.0",
+    "typescript": "4.9.3"
+  }
+}
