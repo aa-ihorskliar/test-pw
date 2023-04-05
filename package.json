@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:playwright:lambda": "cross-env LT=true playwright test"
+    "test": "cross-env LT=true playwright test"
   },
   "repository": {
     "type": "git",
