@@ -9,4 +9,6 @@ jobs:
     name: Trigger shared wf
     uses: aa-ihorskliar/shared-gha-test/.github/workflows/shared.yml@main
     with:
-      path: /my/dummy/path
+      browser: 'chromium'
+      project: 'setup'
+      stagingId: 'dummy'
