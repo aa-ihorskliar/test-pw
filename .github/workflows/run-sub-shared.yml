@@ -7,7 +7,7 @@ on:
 jobs:
   trigger-shared:
     name: Trigger shared wf
-    uses: aa-ihorskliar/shared-gha-test/.github/workflows/shared2.yml@tt
+    uses: aa-ihorskliar/shared-gha-test/sub/.github/workflows/shared3.yml@main
     with:
       browser: 'chromium'
       project: 'setup'
