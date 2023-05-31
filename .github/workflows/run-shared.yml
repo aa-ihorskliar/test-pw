@@ -1,0 +1,13 @@
+name: Run shared
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  trigger-shared:
+    name: Trigger shared wf
+    runs-on: ubuntu-latest
+    uses: ./.github/workflows/shared.yml
+    with:
+      path: /my/dummy/path
