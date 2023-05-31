@@ -7,6 +7,6 @@ on:
 jobs:
   trigger-shared:
     name: Trigger shared wf
-    uses: ./.github/workflows/shared.yml
+    uses: aa-ihorskliar/shared-gha-test/.github/workflows/shared.yml
     with:
       path: /my/dummy/path
