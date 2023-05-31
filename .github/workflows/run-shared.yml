@@ -7,7 +7,7 @@ on:
 jobs:
   trigger-shared:
     name: Trigger shared wf
-    uses: aa-ihorskliar/shared-gha-test/.github/workflows/shared.yml@main
+    uses: agencyanalytics/infrastructure/.github/workflows/shared.yml@CU-860r03pv3_Create-a-shared-GHA-for-Playwright_Ihor-Skliar
     with:
       browser: 'chromium'
       project: 'setup'
