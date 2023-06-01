@@ -5,7 +5,8 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  trigger-shared:
+  trigger-playwright-test:
+    name: Run tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -13,3 +14,11 @@ jobs:
           repository: 'aa-ihorskliar/shared-gha-test'
           ref: 'main'
           token: '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'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: npm-${{hashFiles('**/package.json')}}
