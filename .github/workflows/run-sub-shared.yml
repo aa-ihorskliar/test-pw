@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: aa-ihorskliar/shared-gha-test
-          ref: main
-          token: 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
+          repository: 'aa-ihorskliar/shared-gha-test'
+          ref: 'main'
+          token: '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'
