@@ -12,7 +12,7 @@ jobs:
         with:
           repository: aa-ihorskliar/shared-gha-test
           ref: 'main'
-      - uses: aa-ihorskliar/shared-gha-test/sub/.github/workflows/shared3.yml@main
+      - uses: agencyanalytics/public-ui/.github/workflows/playwright-tests.yml@main
         with:
           browser: 'chromium'
           project: 'setup'
