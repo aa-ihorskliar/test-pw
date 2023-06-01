@@ -1,0 +1,23 @@
+name: Run shared
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  trigger-playwright-test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: 'aa-ihorskliar/shared-gha-test'
+          ref: 'main'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: npm-${{hashFiles('**/package.json')}}
