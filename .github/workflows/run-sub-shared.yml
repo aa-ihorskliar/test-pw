@@ -13,7 +13,6 @@ jobs:
         with:
           repository: 'aa-ihorskliar/shared-gha-test'
           ref: 'main'
-          token: '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'
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
