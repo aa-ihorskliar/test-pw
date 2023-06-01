@@ -5,10 +5,15 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
+
   trigger-shared:
-    name: Trigger shared wf
-    uses: aa-ihorskliar/shared-gha-test/sub/.github/workflows/shared3.yml@main
-    with:
-      browser: 'chromium'
-      project: 'setup'
-      stagingId: 'dummy'
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: aa-ihorskliar/shared-gha-test
+          ref: 'main'
+      - uses: aa-ihorskliar/shared-gha-test/sub/.github/workflows/shared3.yml@main
+        with:
+          browser: 'chromium'
+          project: 'setup'
+          stagingId: 'dummy'
