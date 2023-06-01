@@ -13,8 +13,3 @@ jobs:
           repository: aa-ihorskliar/shared-gha-test
           ref: main
           token: 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
-      - uses: agencyanalytics/public-ui/.github/workflows/playwright-tests.yml@main
-        with:
-          browser: 'chromium'
-          project: 'setup'
-          stagingId: 'dummy'
